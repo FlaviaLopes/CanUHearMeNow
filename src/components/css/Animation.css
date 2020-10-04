@@ -1,57 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 3em;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    padding-bottom: 0em;
-    margin: 2em 0 -.05em -.025em;
-    text-shadow: 10px 10px 40px rgba(32, 18, 26, .5);
-}
-
-p {
-    font-size: 1.1em;
-    letter-spacing: .04em;
-    line-height: 1.55;
-}
-
 .space {
     width: 100%;
-    height: auto%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -200px;
     right: 0;
     left: -10%;
-    bottom: 10%;
-}
-
-.card {
-    position: absolute;
-    width: 100%;
-    max-width: 600px;
-    color: #FFF;
-    padding: 2em 1em;
-    margin-left: 6em;
-    z-index: 0;
-}
-
-.info {
-    font-size: .95em;
-    line-height: 1.8;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0px;
-}
-
-.info span {
-    color: #E46039;
 }
 
 .planet {
@@ -95,8 +51,8 @@ p {
 }
 
 .mars {
-    width: 1500px;
-    height: 1500px;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
     position: relative;
     overflow: hidden;
@@ -114,8 +70,8 @@ p {
 }
 
 .mars .img-map {
-    width: 185rem;
-    height: 94rem;
+    width: 200%;
+    height: 500px;
     position: relative;
     opacity: .4;
     background: url('../../images/mars-bg-min.jpg') 0% 0% / auto 100% repeat-x;

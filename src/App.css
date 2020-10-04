@@ -8,17 +8,11 @@ html,
 body {
     width: 100%;
     height: auto;
-    scroll-behavior: auto;
-    scrollbar-3dlight-color: #333;
-}
-
-body {
     -webkit-font-smoothing: antialiased;
-    background-image: radial-gradient( circle at center, #351215 10%, #07131E 100%);
+    background-image: radial-gradient(circle at center, #351215 10%, #07131E 100%);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
     background-image: url('images/stars-min.png'), radial-gradient(circle at center, #351215 10%, #07131E 100%);
-    overflow: hidden;
     color: white;
     width: 100%;
     height: auto;
@@ -54,7 +48,7 @@ footer {
     color: '#fff';
     text-align: center;
     position: relative;
-    padding: 3rem 0 4rem;
+    padding: 2rem 0 2rem;
 }
 
 header div {
@@ -68,12 +62,12 @@ header div {
 /*Section*/
 
 .main-content {
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: auto;
 }
 
-#info-text div {
+#info-text {
     width: 30%;
     float: left;
     height: auto;
@@ -128,23 +122,58 @@ header div {
 #panel {
     float: left;
     width: 100%;
+    height: auto;
     padding: 3rem 3rem;
+    background-color: white;
 }
 
 #panel div {
     width: 33%;
+    height: auto;
     color: #333;
     float: left;
-    background-color: white;
     padding: 3rem;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    float: left;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 footer div {
     width: 33%;
     float: left;
+}
+@media (max-width: 780px){
+    header, #info-text, #animation, #main-menu{
+        width: 100%;
+    }
+    #animation{
+        margin-bottom: -28rem;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+    #info-text, #animation, #main-menu {
+        padding: 1rem 2rem;
+    }
+
+    #panel {
+        padding: 0;
+    }
+
+    #panel div {
+        width: 100%;
+        float: left;
+    }
+
+    footer div {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
 }

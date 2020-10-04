@@ -8,32 +8,21 @@ import Panel from './components/Panel';
 import Footer from './components/Footer';
 
 
-
-
 class App extends React.Component {
     render = () => {
-        return ( <
-            div >
-            <
-            Header / >
-            <
-            section class = "main-content" >
-            <
-            Info / >
-            <
-            Animation / >
-            <
-            MainMenu / >
-            <
-            Panel / >
-            <
-            /section>    <
-            Footer / >
-            <
-            /
-            div >
-
+        return (
+            <div>
+                <Header/>
+                <section class="main-content">
+                    <Info/>
+                    <Animation/>
+                    <MainMenu/>
+                    <Panel/>
+                </section>
+                <Footer/>
+            </div>
         );
     }
 }
+
 export default App;

@@ -1,6 +1,6 @@
 import React from "react";
 import './css/Animation.css';
-
+import '../App.css'
 class Animation extends React.Component {
     render = () => {
         return (
